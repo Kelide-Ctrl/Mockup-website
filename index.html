@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The brand | Human editing for AI-written content</title>
+<meta name="description" content="Human editors rewrite AI-generated content so it reads like a person wrote it. $0.10 per word, with time-lapse proof.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="container site-header">
+  <a class="brand" href="#">The brand</a>
+  <nav class="nav" aria-label="Main">
+    <a href="#how">How it works</a>
+    <a href="#proof">Proof</a>
+    <a href="#pricing">Pricing</a>
+    <a class="btn btn-accent" href="#order">Reach Out to Editors</a>
+  </nav>
+</header>
+
+<main>
+  <section class="container hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Human editing for AI-written content</p>
+      <h1>Make AI drafts read like a <mark>person</mark> wrote them.</h1>
+      <p class="lead">Real editors rewrite your AI-generated text, add feeling and voice, and send back content you can publish. Watch a time-lapse of the edit as proof.</p>
+      <div class="cta-row">
+        <a class="btn btn-accent" href="#order">Reach Out to Editors</a>
+        <span>$0.10 per word</span>
+      </div>
+    </div>
+    <div class="hero-samples">
+      <div class="sample before">
+        <p class="label">AI draft · sample</p>
+        <p>In today's fast-paced digital landscape, it is important to leverage innovative solutions.</p>
+      </div>
+      <div class="sample after">
+        <p class="label">Human edit · sample</p>
+        <p>Most teams don't need <mark class="tight">more tools</mark>. They need one that works.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="band band-soft">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="cards">
+        <div class="card"><div class="step">1</div><h3>Submit your text</h3><p>Paste it in or upload a Word file. We count the words and show your price up front.</p></div>
+        <div class="card"><div class="step">2</div><h3>Pay securely</h3><p>Checkout is automatic, and your submitted version is locked once you pay.</p></div>
+        <div class="card"><div class="step">3</div><h3>Get the human edit</h3><p>Receive the rewritten copy with a side-by-side comparison and a time-lapse of the edit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof" class="band">
+    <div class="container proof">
+      <div class="proof-copy">
+        <h2>Proof it was edited by a human</h2>
+        <p>Every order comes with a time-lapse of your editor at work, so you can see the rewrite happen instead of taking our word for it.</p>
+      </div>
+      <div class="video">
+        <button class="play" type="button" aria-label="Play sample time-lapse"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#12161F"></path></svg></button>
+        <span>[Sample time-lapse video]</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="band band-soft">
+    <div class="container">
+      <h2>Simple pricing</h2>
+      <div class="price-card">
+        <p class="price">$0.10 <span>per word</span></p>
+        <p class="price-note">Example: a 500-word document is $50.</p>
+        <ul class="checks">
+          <li>Rewritten by a human editor</li>
+          <li>Side-by-side comparison of before and after</li>
+          <li>Time-lapse video of the edit</li>
+          <li>Price shown before you pay</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to make your content sound human?</h2>
+      <a class="btn btn-light" href="#order">Reach Out to Editors</a>
+    </div>
+  </section>
+
+  <section id="order" class="order">
+    <div class="container">
+      <h2>New order</h2>
+      <div class="order-grid">
+        <div class="panel panel-main">
+          <div class="tabs" role="tablist">
+            <button class="tab" type="button" role="tab" data-tab="paste" aria-selected="true">Paste text</button>
+            <button class="tab" type="button" role="tab" data-tab="upload" aria-selected="false">Upload Word file</button>
+          </div>
+          <div role="tabpanel" data-panel="paste">
+            <label for="text">Your text</label>
+            <textarea id="text" placeholder="Paste your AI-generated text here…"></textarea>
+          </div>
+          <div role="tabpanel" data-panel="upload" hidden>
+            <label for="file">Word file (.docx)</label>
+            <input id="file" type="file" accept=".docx">
+            <p id="file-name" class="hint"></p>
+          </div>
+          <p class="hint">Google Docs links aren't accepted. Download your doc as a Word file and upload that instead.</p>
+        </div>
+        <aside class="panel panel-side">
+          <h3>Order summary</h3>
+          <div class="row"><span>Words</span><span id="words">0</span></div>
+          <div class="row"><span>Rate</span><span>$0.10 / word</span></div>
+          <div class="row row-total"><span>Total</span><span id="total">$0.00</span></div>
+          <button id="pay" class="btn btn-accent" type="button" disabled>Proceed to payment</button>
+          <p id="pay-note" class="hint" role="status">Secure checkout. Your text is locked once you pay.</p>
+        </aside>
+      </div>
+      <div class="panel orders">
+        <h3>Your orders</h3>
+        <div class="order-row">
+          <div>Blog post draft.docx<small>1,200 words · $120.00</small></div>
+          <span class="pill">In editing</span>
+        </div>
+        <div class="order-row">
+          <div>Landing page copy.docx<small>640 words · $64.00</small></div>
+          <div class="order-actions">
+            <a href="#">Compare versions</a>
+            <a href="#">Watch time-lapse</a>
+            <span class="pill pill-done">Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© The brand</span>
+    <span class="footer-links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Refund policy</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
